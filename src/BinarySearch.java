@@ -7,16 +7,18 @@ public class BinarySearch {
         // Half of the array is eliminated during each step
         // Run-time: O(log n)
 
-        int[] array = new int[1000000000];
-        int target = 10;
+//        int[] array = new int[1000000000];
+//        int target = 10;
+//
+//        for (int i = 0, j = 0; j < array.length; i+=2) {
+//            array[j] = i;
+//            j++;
+//        }
 
-        for (int i = 0, j = 0; j < array.length; i+=2) {
-            array[j] = i;
-            j++;
-        }
+        int[] array = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512};
 
 //        int index = Arrays.binarySearch(array, target);
-        int index = binarySearch(array, target);
+        int index = binarySearch(array, 16);
 
         if (index == -1) System.out.println("Value not found!");
         else System.out.println("Value found at index: " + index);
@@ -30,7 +32,7 @@ public class BinarySearch {
 
         while (first <= last){
             middle = (last + first) / 2;
-            System.out.println(steps++);
+            System.out.println(array[middle]);
             if (array[middle] == target) {
                 return middle;
             }
