@@ -1,4 +1,5 @@
 public class DynamicArray {
+
     private int size;
     private int capacity = 5;
     private Object[] array;
@@ -6,6 +7,7 @@ public class DynamicArray {
     public DynamicArray() {
         this.array = new Object[capacity];
     }
+
     public DynamicArray(int capacity) {
         this.capacity = capacity;
         this.array = new Object[capacity];
@@ -109,8 +111,7 @@ public class DynamicArray {
         }
         if (!isEmpty()) {
             string = "[" + string.substring(0, string.length() - 2) + "]";
-        }
-        else {
+        } else {
             string = "[]";
         }
         return string;
