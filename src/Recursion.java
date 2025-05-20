@@ -2,7 +2,7 @@ public class Recursion {
     public static void main(String[] args) {
 
         // Recursion = When a thing is defined in terms of itself. - Wikipedia
-        //			   Apply the result of a procedure, to a procedure.
+        //			   Applies the result of a procedure, to a procedure.
         //			   A recursive method calls itself. Can be a substitute for iteration.
         //			   Divide a problem into subproblems of the same type as the original.
         //			   Commonly used with advanced sorting algorithms and navigating trees

@@ -16,7 +16,7 @@ public class JavaHashTable {
         //	        can store multiple Entries in case of a collision (similarly linked a LinkedList)
 
         // collision = hash function generates the same index for more than one key
-        //			   less collisions = more efficiency
+        //			   less collision = more efficiency
 
         // Runtime complexity: Best Case O(1)
         //                     Worst Case O(n)
@@ -30,9 +30,14 @@ public class JavaHashTable {
         hashtable.put("777", "Elome");
         hashtable.put("985", "Holome");
 
+
+
+//        System.out.println(hashtable.size());
 //        System.out.println(hashtable.get(777));
 //        System.out.println(hashtable.keySet());
-            hashtable.remove("985");
+
+        hashtable.remove("985");
+
         for (String key : hashtable.keySet()) {
             System.out.println(key.hashCode() % 11 + "\t" + hashtable.get(key));
         }
